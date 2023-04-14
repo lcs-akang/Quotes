@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A785AFBD29E9AC1100BFB194 /* QuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785AFBC29E9AC1100BFB194 /* QuotesApp.swift */; };
-		A785AFBF29E9AC1100BFB194 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785AFBE29E9AC1100BFB194 /* ContentView.swift */; };
 		A785AFC129E9AC1700BFB194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A785AFC029E9AC1700BFB194 /* Assets.xcassets */; };
 		A785AFC429E9AC1700BFB194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A785AFC329E9AC1700BFB194 /* Preview Assets.xcassets */; };
+		A785AFCC29E9AD1000BFB194 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785AFCB29E9AD1000BFB194 /* QuoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A785AFB929E9AC1100BFB194 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A785AFBC29E9AC1100BFB194 /* QuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesApp.swift; sourceTree = "<group>"; };
-		A785AFBE29E9AC1100BFB194 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A785AFC029E9AC1700BFB194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A785AFC329E9AC1700BFB194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A785AFCB29E9AD1000BFB194 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				A785AFBC29E9AC1100BFB194 /* QuotesApp.swift */,
-				A785AFBE29E9AC1100BFB194 /* ContentView.swift */,
+				A785AFCA29E9ACEF00BFB194 /* Views */,
 				A785AFC029E9AC1700BFB194 /* Assets.xcassets */,
 				A785AFC229E9AC1700BFB194 /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				A785AFC329E9AC1700BFB194 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A785AFCA29E9ACEF00BFB194 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A785AFCB29E9AD1000BFB194 /* QuoteView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A785AFBF29E9AC1100BFB194 /* ContentView.swift in Sources */,
 				A785AFBD29E9AC1100BFB194 /* QuotesApp.swift in Sources */,
+				A785AFCC29E9AD1000BFB194 /* QuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
