@@ -11,6 +11,7 @@
 		A785AFC129E9AC1700BFB194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A785AFC029E9AC1700BFB194 /* Assets.xcassets */; };
 		A785AFC429E9AC1700BFB194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A785AFC329E9AC1700BFB194 /* Preview Assets.xcassets */; };
 		A785AFCC29E9AD1000BFB194 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785AFCB29E9AD1000BFB194 /* QuoteView.swift */; };
+		A785AFCF29E9AEA600BFB194 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785AFCE29E9AEA600BFB194 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A785AFC029E9AC1700BFB194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A785AFC329E9AC1700BFB194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A785AFCB29E9AD1000BFB194 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		A785AFCE29E9AEA600BFB194 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				A785AFBC29E9AC1100BFB194 /* QuotesApp.swift */,
+				A785AFCD29E9AE8F00BFB194 /* Model */,
 				A785AFCA29E9ACEF00BFB194 /* Views */,
 				A785AFC029E9AC1700BFB194 /* Assets.xcassets */,
 				A785AFC229E9AC1700BFB194 /* Preview Content */,
@@ -73,6 +76,14 @@
 				A785AFCB29E9AD1000BFB194 /* QuoteView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A785AFCD29E9AE8F00BFB194 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A785AFCE29E9AEA600BFB194 /* Quote.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A785AFBD29E9AC1100BFB194 /* QuotesApp.swift in Sources */,
+				A785AFCF29E9AEA600BFB194 /* Quote.swift in Sources */,
 				A785AFCC29E9AD1000BFB194 /* QuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
