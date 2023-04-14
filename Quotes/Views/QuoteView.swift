@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct QuoteView: View {
+    
+    // MARK: Stored properties
+    
+    @State var currentQuote = exampleQuote
+    
+    //MARK: Computed properties
     var body: some View {
         NavigationView {
             VStack {
-                Text("True silence is the rest of the mind; it is to the spirit what sleep is to the body, nourishment and refreshment.")
+                Text(currentQuote.text)
                     .font(.title2)
                     .multilineTextAlignment(.center)
                 
-                Text("- William Penn")
+                Text("- \(currentQuote.author)")
                     .font(.title3)
                     .padding()
                     
