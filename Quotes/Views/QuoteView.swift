@@ -11,23 +11,35 @@ struct QuoteView: View {
     
     // MARK: Stored properties
     
-    @State var currentQuote = exampleQuote
+    @State var currentQuote: Quote?
     
     //MARK: Computed properties
     var body: some View {
         NavigationView {
             VStack {
-                Text(currentQuote.text)
-                    .font(.title2)
-                    .multilineTextAlignment(.center)
                 
-                Text("- \(currentQuote.author)")
-                    .font(.title3)
-                    .padding()
+                
+                if let currentQuote {
                     
+                    Text(currentQuote.text)
+                        .font(.title2)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("- \(currentQuote.author)")
+                        .font(.title3)
+                        .padding()
+                    
+                } else {
+                    ProgressView()
+                }
+                
+                
             }
             .padding()
             .navigationTitle("Random Quotes")
+        }
+        .task {
+            currentQuote = await NetworkService.fetch()
         }
     }
 }

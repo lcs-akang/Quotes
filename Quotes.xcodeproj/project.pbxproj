@@ -12,6 +12,7 @@
 		A785AFC429E9AC1700BFB194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A785AFC329E9AC1700BFB194 /* Preview Assets.xcassets */; };
 		A785AFCC29E9AD1000BFB194 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785AFCB29E9AD1000BFB194 /* QuoteView.swift */; };
 		A785AFCF29E9AEA600BFB194 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785AFCE29E9AEA600BFB194 /* Quote.swift */; };
+		A785AFD329E9B00400BFB194 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785AFD229E9B00400BFB194 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A785AFC329E9AC1700BFB194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A785AFCB29E9AD1000BFB194 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		A785AFCE29E9AEA600BFB194 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		A785AFD229E9B00400BFB194 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				A785AFBC29E9AC1100BFB194 /* QuotesApp.swift */,
 				A785AFCD29E9AE8F00BFB194 /* Model */,
+				A785AFD029E9AFDE00BFB194 /* Services */,
 				A785AFCA29E9ACEF00BFB194 /* Views */,
 				A785AFC029E9AC1700BFB194 /* Assets.xcassets */,
 				A785AFC229E9AC1700BFB194 /* Preview Content */,
@@ -84,6 +87,14 @@
 				A785AFCE29E9AEA600BFB194 /* Quote.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A785AFD029E9AFDE00BFB194 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A785AFD229E9B00400BFB194 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			files = (
 				A785AFBD29E9AC1100BFB194 /* QuotesApp.swift in Sources */,
 				A785AFCF29E9AEA600BFB194 /* Quote.swift in Sources */,
+				A785AFD329E9B00400BFB194 /* NetworkService.swift in Sources */,
 				A785AFCC29E9AD1000BFB194 /* QuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
