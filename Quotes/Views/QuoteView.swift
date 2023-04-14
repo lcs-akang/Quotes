@@ -9,7 +9,14 @@ import SwiftUI
 
 struct QuoteView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("True silence is the rest of the mind; it is to the spirit what sleep is to the body, nourishment and refreshment.")
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+            }
+            .navigationTitle("Random Quotes")
+        }
     }
 }
 
