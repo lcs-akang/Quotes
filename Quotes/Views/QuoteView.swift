@@ -14,7 +14,13 @@ struct QuoteView: View {
                 Text("True silence is the rest of the mind; it is to the spirit what sleep is to the body, nourishment and refreshment.")
                     .font(.title2)
                     .multilineTextAlignment(.center)
+                
+                Text("- William Penn")
+                    .font(.title3)
+                    .padding()
+                    
             }
+            .padding()
             .navigationTitle("Random Quotes")
         }
     }
